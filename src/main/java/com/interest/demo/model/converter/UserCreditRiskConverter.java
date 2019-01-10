@@ -1,7 +1,7 @@
-package com.example.model.converter;
+package com.interest.demo.model.converter;
 
-import com.example.model.dto.UserCreditRiskDto;
-import com.example.model.entity.UserCreditRisk;
+import com.interest.demo.model.dto.UserCreditRiskDto;
+import com.interest.demo.model.entity.UserCreditRisk;
 
 public class UserCreditRiskConverter {
 

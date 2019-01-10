@@ -1,4 +1,4 @@
-package com.example;
+package com.interest.demo;
 
 import javax.annotation.PostConstruct;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.example.model.Risk;
-import com.example.model.entity.UserCreditRisk;
-import com.example.repository.UserCreditRiskRepository;
+import com.interest.demo.model.Risk;
+import com.interest.demo.model.entity.UserCreditRisk;
+import com.interest.demo.repository.UserCreditRiskRepository;
 
 @SpringBootApplication
 public class InterestDemoApplication {

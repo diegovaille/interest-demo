@@ -1,8 +1,8 @@
-package com.example.service;
+package com.interest.demo.service;
 
 import java.util.List;
 
-import com.example.model.dto.UserCreditRiskDto;
+import com.interest.demo.model.dto.UserCreditRiskDto;
 
 public interface UserService {
 

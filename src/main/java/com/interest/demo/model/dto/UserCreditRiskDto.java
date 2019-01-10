@@ -1,12 +1,19 @@
-package com.example.model.dto;
+package com.interest.demo.model.dto;
 
-import com.example.model.Risk;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Null;
+
+import com.interest.demo.model.Risk;
 
 public class UserCreditRiskDto {
 
+	@NotNull
 	private String clientName;
+	@NotNull
 	private Double creditLimit;
+	@NotNull
 	private Risk riskType;
+	@Null
 	private Double interestRate;
 	
 	public String getClientName() {

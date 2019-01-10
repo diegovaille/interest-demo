@@ -1,4 +1,4 @@
-package com.example.service.impl;
+package com.interest.demo.service.impl;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.model.converter.UserCreditRiskConverter;
-import com.example.model.dto.UserCreditRiskDto;
-import com.example.repository.UserCreditRiskRepository;
-import com.example.service.UserService;
+import com.interest.demo.model.converter.UserCreditRiskConverter;
+import com.interest.demo.model.dto.UserCreditRiskDto;
+import com.interest.demo.repository.UserCreditRiskRepository;
+import com.interest.demo.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

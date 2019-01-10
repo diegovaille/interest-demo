@@ -7,31 +7,37 @@
 <body ng-app="demo">
 	<hr />
 	<div class="container" ng-controller="UserController">
-		<div class="form-group">
-			<label>Nome cliente </label> <input type="text"
-				ng-model="userDto.clientName" class="input-sm spacing" /> <br>
-		</div>
-		<div class="form-group">
-			<label>Limite de crédito </label> <input type="text"
-				ng-model="userDto.creditLimit" money-mask money-mask-prepend="R$ " class="input-sm" /> <br>
-		</div>
+		<form name="userForm" ng-submit="saveUser()">
+			<div class="form-group">
+				<label>Nome cliente </label> <input type="text" name="clientName"
+					required ng-model="userDto.clientName" class="input-sm spacing" />
+				<br>
+			</div>
+			<div class="form-group">
+				<label>Limite de crédito </label> <input type="text"
+					name="creditLimit" required ng-model="userDto.creditLimit"
+					value="0" money-mask money-mask-prepend="R$ " class="input-sm" />
+				<br>
+			</div>
 
-		<div class="form-group">
-			<label>Tipo de risco </label> <select name="selectElem"
-				ng-model="userDto.riskType"
-				ng-options="item as item for item in options">
-				<option value="" selected disabled>Selecione</option>
-			</select>
-		</div>
+			<div class="form-group">
+				<label>Tipo de risco </label> <select name="riskSelect"
+					ng-model="userDto.riskType" required
+					ng-options="item as item for item in options">
+					<option value="" selected disabled>Selecione</option>
+				</select>
+			</div>
 
-		<button ng-click="saveUser()" class="btn btn-sm btn-info">Salvar</button>
+			<button type="submit" class="btn btn-sm btn-info">Salvar</button>
 
+		</form>
+		
 		<hr />
 		<div class="row">
 			<p>{{allUsers | json}}</p>
 		</div>
 		<hr />
-		<h2>Dados Cadastrados: </h2>
+		<h2>Dados Cadastrados:</h2>
 		<div class="row" ng-repeat="user in allUsers">
 			<div class="row">
 				<div class="col-xs-3">Nome Cliente</div>
@@ -54,6 +60,7 @@
 	</div>
 </body>
 <script src="js/lib/angular.min.js"></script>
+<script src="js/lib/angular-messages.js"></script>
 <script src="js/lib/rw-money-mask-min.js"></script>
 <script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
 <script src="js/app/app.js"></script>

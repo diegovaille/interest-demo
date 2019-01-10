@@ -1,4 +1,4 @@
-package com.example.utils;
+package com.interest.demo.utils;
 
 public interface Constants {
 

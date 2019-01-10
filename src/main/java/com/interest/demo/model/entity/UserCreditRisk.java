@@ -1,4 +1,4 @@
-package com.example.model.entity;
+package com.interest.demo.model.entity;
 
 import java.io.Serializable;
 
@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import com.example.model.Risk;
+import com.interest.demo.model.Risk;
 
 @Entity
 public class UserCreditRisk implements Serializable {
